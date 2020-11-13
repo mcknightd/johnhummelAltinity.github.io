@@ -32,90 +32,103 @@ The following status checks show quick checks that can be used to detect problem
    <td>ClickHouse server is up.
    </td>
    <td>
-    `$ curl 'http://localhost:8123/'`
-    `Ok.`
+
+    <code>$ curl 'http://localhost:8123/'</code>
+    <code>Ok.</code>
+   
    </td>
-   <td>`Critical`
+   <td>
+   
+   <code>Critical</code>
+   
    </td>
   </tr>
   <tr>
    <td>Too many simultaneous queries. Maximum: 100
    </td>
-   <td>`select value from system.metrics `
-`where metric='Query'`
+   <td><code>select value from system.metrics </code>
+<p>
+<code>where metric='Query'</code>
    </td>
-   <td>`Critical`
+   <td><code>Critical</code>
    </td>
   </tr>
   <tr>
    <td>Replication status
    </td>
-   <td>`$ curl 'http://localhost:8123/replicas_status'`
-`Ok.`
+   <td><code>$ curl 'http://localhost:8123/replicas_status'</code>
+<p>
+<code>Ok.</code>
    </td>
-   <td>`High`
+   <td><code>High</code>
    </td>
   </tr>
   <tr>
-   <td>Read only replicas (reflected by `replicas_status` as well)
+   <td>Read only replicas (reflected by <code>replicas_status</code> as well)
    </td>
-   <td>`select value from system.metrics `
-`where metric='ReadonlyReplica'`
+   <td><code>select value from system.metrics </code>
+<p>
+<code>where metric='ReadonlyReplica'</code>
    </td>
-   <td>`High`
+   <td><code>High</code>
    </td>
   </tr>
   <tr>
    <td>Some replication tasks are stuck
    </td>
-   <td>`select count()`
-`from system.replication_queue`
-`where num_tries > 100`
+   <td><code>select count()</code>
+<p>
+<code>from system.replication_queue</code>
+<p>
+<code>where num_tries > 100</code>
    </td>
-   <td>`High`
+   <td><code>High</code>
    </td>
   </tr>
   <tr>
    <td>ZooKeeper is available
    </td>
-   <td>`select count() from system.zookeeper `
-`where path='/'`
+   <td><code>select count() from system.zookeeper </code>
+<p>
+<code>where path='/'</code>
    </td>
-   <td>`Critical for writes`
+   <td><code>Critical for writes</code>
    </td>
   </tr>
   <tr>
    <td>ZooKeeper exceptions
    </td>
-   <td>`select value from system.events `
-`where event='ZooKeeperHardwareExceptions'`
+   <td><code>select value from system.events </code>
+<p>
+<code>where event='ZooKeeperHardwareExceptions'</code>
    </td>
-   <td>`Medium`
+   <td><code>Medium</code>
    </td>
   </tr>
   <tr>
    <td>Ensure CH nodes are available
    </td>
-   <td>`$ for node in `echo "select distinct host_address from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-`; do curl "http://$node:8123/" --silent ; done | sort -u`
-`Ok.`
+   <td><code>$ for node in `echo "select distinct host_address from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-`; do curl "http://$node:8123/" --silent ; done | sort -u</code>
+<p>
+<code>Ok.</code>
    </td>
-   <td>`High`
+   <td><code>High</code>
    </td>
   </tr>
   <tr>
    <td>Ensure all CH clusters are available (i.e. every configured cluster has enough replicas to serve queries)
    </td>
-   <td>`for cluster in `echo "select distinct cluster from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-` ; do clickhouse-client --query="select '$cluster', 'OK' from cluster('$cluster', system, one)" ; done `
+   <td><code>for cluster in `echo "select distinct cluster from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-` ; do clickhouse-client --query="select '$cluster', 'OK' from cluster('$cluster', system, one)" ; done </code>
    </td>
-   <td>`Critical`
+   <td><code>Critical</code>
    </td>
   </tr>
   <tr>
    <td>There are files in 'detached' folders
    </td>
-   <td>`select count() from system.detached_parts`
+   <td><code>select count() from system.detached_parts</code>
    </td>
-   <td>`Medium`
+   <td><code>Medium</code>
    </td>
   </tr>
   <tr>
@@ -124,61 +137,71 @@ Number of parts is growing; \
 Inserts are being delayed; \
 Inserts are being rejected
    </td>
-   <td>`select value from system.asynchronous_metrics `
-`where metric='MaxPartCountForPartition';`
-`select value from system.events/system.metrics `
-`where event/metric='DelayedInserts'; \
-select value from system.events `
-`where event='RejectedInserts'`
+   <td><code>select value from system.asynchronous_metrics </code>
+<p>
+<code>where metric='MaxPartCountForPartition';</code>
+<p>
+<code>select value from system.events/system.metrics </code>
+<p>
+<code>where event/metric='DelayedInserts'; \
+select value from system.events </code>
+<p>
+<code>where event='RejectedInserts'</code>
    </td>
-   <td>`Critical`
+   <td><code>Critical</code>
    </td>
   </tr>
   <tr>
    <td>Dictionaries: exception
    </td>
-   <td>`select concat(name,': ',last_exception) `
-`from system.dictionaries`
-`where last_exception != ''`
+   <td><code>select concat(name,': ',last_exception) </code>
+<p>
+<code>from system.dictionaries</code>
+<p>
+<code>where last_exception != ''</code>
    </td>
-   <td>`Medium`
+   <td><code>Medium</code>
    </td>
   </tr>
   <tr>
    <td>Time since last ClickHouse server restart.
    </td>
-   <td>`select uptime();`
-`select value from system.asynchronous_metrics `
-`where metric='Uptime'`
+   <td><code>select uptime();</code>
+<p>
+<code>select value from system.asynchronous_metrics </code>
+<p>
+<code>where metric='Uptime'</code>
    </td>
-   <td>`(None)`
+   <td><code>(None)</code>
    </td>
   </tr>
   <tr>
    <td>DistributedFilesToInsert should not be always increasing
    </td>
-   <td>`select value from system.metrics `
-`where metric='DistributedFilesToInsert'`
+   <td><code>select value from system.metrics </code>
+<p>
+<code>where metric='DistributedFilesToInsert'</code>
    </td>
-   <td>`Medium`
+   <td><code>Medium</code>
    </td>
   </tr>
   <tr>
    <td>A data part was lost
    </td>
-   <td>`select value from system.events `
-`where event='ReplicatedDataLoss'`
+   <td><code>select value from system.events </code>
+<p>
+<code>where event='ReplicatedDataLoss'</code>
    </td>
-   <td>`High`
+   <td><code>High</code>
    </td>
   </tr>
   <tr>
    <td>Data parts are not the same on different replicas
    </td>
-   <td>`select value from system.events where event='DataAfterMergeDiffersFromReplica'; \
-select value from system.events where event='DataAfterMutationDiffersFromReplica'`
+   <td><code>select value from system.events where event='DataAfterMergeDiffersFromReplica'; \
+select value from system.events where event='DataAfterMutationDiffersFromReplica'</code>
    </td>
-   <td>`Medium`
+   <td><code>Medium</code>
    </td>
   </tr>
 </table>
