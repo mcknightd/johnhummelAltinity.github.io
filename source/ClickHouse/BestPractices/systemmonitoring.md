@@ -34,6 +34,7 @@ The following status checks show quick checks that can be used to detect problem
    <td>
 
     <code>$ curl 'http://localhost:8123/'</code>
+    <p>
     <code>Ok.</code>
    
    </td>
