@@ -9,12 +9,12 @@ Organizations that run ClickHouse successfully share the following general chara
 
 <table>
   <tr>
-   <td><strong>Principle</strong>
-   </td>
-   <td><strong>Pattern</strong>
-   </td>
-   <td><strong>Anti-Pattern</strong>
-   </td>
+   <th><strong>Principle</strong>
+   </th>
+   <th><strong>Pattern</strong>
+   </th>
+   <th><strong>Anti-Pattern</strong>
+   </th>
   </tr>
   <tr>
    <td>Assignment of responsibility
