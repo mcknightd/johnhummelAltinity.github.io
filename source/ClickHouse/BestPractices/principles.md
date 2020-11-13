@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Principles of Operation
 layout: default
 published: true
 order: 2
