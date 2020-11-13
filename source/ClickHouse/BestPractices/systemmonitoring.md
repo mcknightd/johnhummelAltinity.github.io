@@ -4,20 +4,18 @@ layout: default
 published: true
 order: 4
 ---
+
 ## Monitoring Frameworks
 
 Prometheus combined with Grafana is overall the most frequently used framework for ClickHouse monitoring.  Please see the [ClickHouse Monitoring 101 Webinar](https://www.altinity.com/webinarspage/2020/04/01/clickhouse-monitoring-101-what-to-monitor-and-how) for complete details on deployment. 
 
 Other commonly used frameworks include Instana, Zabbix, and ELK stack. Customers have used all of these successfully. 
 
-
 ## ClickHouse
-
 
 ### Handy Status Checks and Alert Conditions
 
 The following status checks show quick checks that can be used to detect problems with ClickHouse.  We use these regularly in support calls.  They are also good targets for monitoring. 
-
 
 <table>
   <tr>
@@ -32,11 +30,9 @@ The following status checks show quick checks that can be used to detect problem
    <td>ClickHouse server is up.
    </td>
    <td>
-
     <code>$ curl 'http://localhost:8123/'</code>
     <br />
     <code>Ok.</code>
-   
    </td>
    <td>
    
@@ -122,7 +118,7 @@ The following status checks show quick checks that can be used to detect problem
    <td>Ensure CH nodes are available
    </td>
    <td>
-<code>$ for node in `echo "select distinct host_address from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-`; do curl "http://$node:8123/" --silent ; done | sort -u</code>
+<code>$ for node in `echo "select distinct host_address from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-` ; do curl "http://$node:8123/" --silent ; done | sort -u</code>
 <br />
 <code>Ok.</code>
    </td>
@@ -159,7 +155,7 @@ Inserts are being rejected
    <td>
 <code>select value from system.asynchronous_metrics </code>
 <br />
-<code>where metric='MaxPartCountForPartition';</code>
+<code>where metric='MaxPartCountForPartition'; </code>
 <br />
 <code>select value from system.events/system.metrics </code>
 <br />
@@ -176,7 +172,7 @@ select value from system.events </code>
    <td>Dictionaries: exception
    </td>
    <td>
-<code>select concat(name,': ',last_exception) </code>
+<code>select concat(name, ': ', last_exception) </code>
 <br />
 <code>from system.dictionaries</code>
 <br />
@@ -190,7 +186,7 @@ select value from system.events </code>
    <td>Time since last ClickHouse server restart.
    </td>
    <td>
-<code>select uptime();</code>
+<code>select uptime(); </code>
 <br />
 <code>select value from system.asynchronous_metrics </code>
 <br />
@@ -237,12 +233,9 @@ select value from system.events where event='DataAfterMutationDiffersFromReplica
   </tr>
 </table>
 
-
-
 ### Common Metrics
 
 Altinity includes the following system table properties in its internal metrics dashboards.  
-
 
 <table>
   <tr>
@@ -439,13 +432,9 @@ Altinity includes the following system table properties in its internal metrics 
   </tr>
 </table>
 
-
-
 ## Hosts
 
 Basic metrics for hosts should be monitored at a minimum, including:
-
-
 
 *   CPU utilization
 *   Total and free memory
