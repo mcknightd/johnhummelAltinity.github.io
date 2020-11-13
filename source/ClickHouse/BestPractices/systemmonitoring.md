@@ -31,9 +31,11 @@ The following status checks show quick checks that can be used to detect problem
   <tr>
    <td>ClickHouse server is up.
    </td>
-   <td><code>$ curl 'http://localhost:8123/'</code>
-<p>
-<code>Ok.</code>
+   <td>
+    ```
+    $ curl 'http://localhost:8123/'
+    Ok.
+    ```
    </td>
    <td><code>Critical</code>
    </td>
