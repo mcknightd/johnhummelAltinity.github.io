@@ -47,89 +47,107 @@ The following status checks show quick checks that can be used to detect problem
   <tr>
    <td>Too many simultaneous queries. Maximum: 100
    </td>
-   <td><code>select value from system.metrics </code>
-<p>
+   <td>
+<code>select value from system.metrics </code>
+<br />
 <code>where metric='Query'</code>
    </td>
-   <td><code>Critical</code>
+   <td>
+<code>Critical</code>
    </td>
   </tr>
   <tr>
    <td>Replication status
    </td>
-   <td><code>$ curl 'http://localhost:8123/replicas_status'</code>
-<p>
+   <td>
+<code>$ curl 'http://localhost:8123/replicas_status'</code>
+<br />
 <code>Ok.</code>
    </td>
-   <td><code>High</code>
+   <td>
+<code>High</code>
    </td>
   </tr>
   <tr>
    <td>Read only replicas (reflected by <code>replicas_status</code> as well)
    </td>
-   <td><code>select value from system.metrics </code>
-<p>
+   <td>
+<code>select value from system.metrics </code>
+<br />
 <code>where metric='ReadonlyReplica'</code>
    </td>
-   <td><code>High</code>
+   <td>
+<code>High</code>
    </td>
   </tr>
   <tr>
    <td>Some replication tasks are stuck
    </td>
-   <td><code>select count()</code>
-<p>
+   <td>
+<code>select count()</code>
+<br />
 <code>from system.replication_queue</code>
-<p>
+<br />
 <code>where num_tries > 100</code>
    </td>
-   <td><code>High</code>
+   <td>
+<code>High</code>
    </td>
   </tr>
   <tr>
    <td>ZooKeeper is available
    </td>
-   <td><code>select count() from system.zookeeper </code>
-<p>
+   <td>
+<code>select count() from system.zookeeper </code>
+<br />
 <code>where path='/'</code>
    </td>
-   <td><code>Critical for writes</code>
+   <td>
+<code>Critical for writes</code>
    </td>
   </tr>
   <tr>
    <td>ZooKeeper exceptions
    </td>
-   <td><code>select value from system.events </code>
-<p>
+   <td>
+<code>select value from system.events </code>
+<br />
 <code>where event='ZooKeeperHardwareExceptions'</code>
    </td>
-   <td><code>Medium</code>
+   <td>
+<code>Medium</code>
    </td>
   </tr>
   <tr>
    <td>Ensure CH nodes are available
    </td>
-   <td><code>$ for node in `echo "select distinct host_address from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-`; do curl "http://$node:8123/" --silent ; done | sort -u</code>
-<p>
+   <td>
+<code>$ for node in `echo "select distinct host_address from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-`; do curl "http://$node:8123/" --silent ; done | sort -u</code>
+<br />
 <code>Ok.</code>
    </td>
-   <td><code>High</code>
+   <td>
+<code>High</code>
    </td>
   </tr>
   <tr>
    <td>Ensure all CH clusters are available (i.e. every configured cluster has enough replicas to serve queries)
    </td>
-   <td><code>for cluster in `echo "select distinct cluster from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-` ; do clickhouse-client --query="select '$cluster', 'OK' from cluster('$cluster', system, one)" ; done </code>
+   <td>
+<code>for cluster in `echo "select distinct cluster from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-` ; do clickhouse-client --query="select '$cluster', 'OK' from cluster('$cluster', system, one)" ; done </code>
    </td>
-   <td><code>Critical</code>
+   <td>
+<code>Critical</code>
    </td>
   </tr>
   <tr>
    <td>There are files in 'detached' folders
    </td>
-   <td><code>select count() from system.detached_parts</code>
+   <td>
+<code>select count() from system.detached_parts</code>
    </td>
-   <td><code>Medium</code>
+   <td>
+<code>Medium</code>
    </td>
   </tr>
   <tr>
@@ -138,71 +156,83 @@ Number of parts is growing; \
 Inserts are being delayed; \
 Inserts are being rejected
    </td>
-   <td><code>select value from system.asynchronous_metrics </code>
-<p>
+   <td>
+<code>select value from system.asynchronous_metrics </code>
+<br />
 <code>where metric='MaxPartCountForPartition';</code>
-<p>
+<br />
 <code>select value from system.events/system.metrics </code>
-<p>
+<br />
 <code>where event/metric='DelayedInserts'; \
 select value from system.events </code>
-<p>
+<br />
 <code>where event='RejectedInserts'</code>
    </td>
-   <td><code>Critical</code>
+   <td>
+<code>Critical</code>
    </td>
   </tr>
   <tr>
    <td>Dictionaries: exception
    </td>
-   <td><code>select concat(name,': ',last_exception) </code>
-<p>
+   <td>
+<code>select concat(name,': ',last_exception) </code>
+<br />
 <code>from system.dictionaries</code>
-<p>
+<br />
 <code>where last_exception != ''</code>
    </td>
-   <td><code>Medium</code>
+   <td>
+<code>Medium</code>
    </td>
   </tr>
   <tr>
    <td>Time since last ClickHouse server restart.
    </td>
-   <td><code>select uptime();</code>
-<p>
+   <td>
+<code>select uptime();</code>
+<br />
 <code>select value from system.asynchronous_metrics </code>
-<p>
+<br />
 <code>where metric='Uptime'</code>
    </td>
-   <td><code>(None)</code>
+   <td>
+<code>(None)</code>
    </td>
   </tr>
   <tr>
    <td>DistributedFilesToInsert should not be always increasing
    </td>
-   <td><code>select value from system.metrics </code>
-<p>
+   <td>
+<code>select value from system.metrics </code>
+<br />
 <code>where metric='DistributedFilesToInsert'</code>
    </td>
-   <td><code>Medium</code>
+   <td>
+<code>Medium</code>
    </td>
   </tr>
   <tr>
    <td>A data part was lost
    </td>
-   <td><code>select value from system.events </code>
-<p>
+   <td>
+<code>select value from system.events </code>
+<br />
 <code>where event='ReplicatedDataLoss'</code>
    </td>
-   <td><code>High</code>
+   <td>
+<code>High</code>
    </td>
   </tr>
   <tr>
    <td>Data parts are not the same on different replicas
    </td>
-   <td><code>select value from system.events where event='DataAfterMergeDiffersFromReplica'; \
+   <td>
+<code>select value from system.events where event='DataAfterMergeDiffersFromReplica'; \
 select value from system.events where event='DataAfterMutationDiffersFromReplica'</code>
    </td>
-   <td><code>Medium</code>
+   <td>
+<code>Medium</code>
    </td>
   </tr>
 </table>
