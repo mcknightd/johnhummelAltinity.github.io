@@ -461,37 +461,29 @@ bin/zkCli.sh -server 127.0.0.1:2181
 
 **These settings you might want to change if connections between the nodes are not very reliable: **
 
+
+```
 /etc/zookeeper/conf/zoo.cfg
-
 # The number of ticks that the initial synchronization phase can take
-
 initLimit=10
-
 # The number of ticks that can pass between sending a request and getting an acknowledgement
-
 syncLimit=5
+```
 
 **These settings you might want to change depending on your workload, so that snapshots are not created too often:**
 
+```
 /etc/zookeeper/conf/zoo.cfg
-
 # To avoid seeks ZooKeeper allocates space in the transaction log file in blocks of preAllocSize kilobytes.
-
 # The default block size is 64M. One reason for changing the size of the blocks is to reduce the block size
-
 # if snapshots are taken more often. (Also, see snapCount).
-
 preAllocSize=65536
-
 # ZooKeeper logs transactions to a transaction log. After snapCount transactions are written to a log file a
-
 # snapshot is started and a new transaction log file is started. The default snapCount is 10,000.
-
 snapCount=10000
+```
 
 Documentation:
-
-
 
 *   ZooKeeper Getting Started Guide [https://zookeeper.apache.org/doc/current/zookeeperStarted.html](https://zookeeper.apache.org/doc/current/zookeeperStarted.html)
 *   ClickHouse tips: [https://clickhouse.yandex/docs/en/operations/tips/#zookeeper](https://clickhouse.yandex/docs/en/operations/tips/#zookeeper)
