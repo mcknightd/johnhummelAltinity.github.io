@@ -7,244 +7,180 @@ order: 4
 
 ## Monitoring Frameworks
 
-Prometheus combined with Grafana is overall the most frequently used framework for ClickHouse monitoring.  Please see the [ClickHouse Monitoring 101 Webinar](https://www.altinity.com/webinarspage/2020/04/01/clickhouse-monitoring-101-what-to-monitor-and-how) for complete details on deployment. 
+Prometheus combined with Grafana is overall the most frequently used framework for ClickHouse monitoring.  Please see the [ClickHouse Monitoring 101 Webinar](https://www.altinity.com/webinarspage/2020/04/01/clickhouse-monitoring-101-what-to-monitor-and-how) for complete details on deployment.
 
-Other commonly used frameworks include Instana, Zabbix, and ELK stack. Customers have used all of these successfully. 
+Other commonly used frameworks include Instana, Zabbix, and ELK stack. Customers have used all of these successfully.
 
 ## ClickHouse
 
 ### Handy Status Checks and Alert Conditions
 
-The following status checks show quick checks that can be used to detect problems with ClickHouse.  We use these regularly in support calls.  They are also good targets for monitoring. 
+The following status checks show quick checks that can be used to detect problems with ClickHouse.  We use these regularly in support calls.  They are also good targets for monitoring.
+
+
+
 
 <table>
   <tr>
-   <td><strong>Check Name</strong>
-   </td>
-   <td><strong>Shell or SQL command</strong>
-   </td>
-   <td><strong>Severity</strong>
-   </td>
+   <th>Check Name
+   </th>
+   <th>Shell or SQL command
+   </th>
+   <th>Severity
+   </th>
   </tr>
   <tr>
    <td>ClickHouse server is up.
    </td>
    <td>
-    <code>$ curl 'http://localhost:8123/'</code>
-    <br />
-    <code>Ok.</code>
+    <code lang="bash">$ curl 'http://localhost:8123/'<br/>OK</code>
    </td>
-   <td>
-   
-   <code>Critical</code>
-   
+   <td><code lang="bash">Critical</code>
    </td>
   </tr>
   <tr>
    <td>Too many simultaneous queries. Maximum: 100
    </td>
-   <td>
-<code>select value from system.metrics </code>
-<br />
-<code>where metric='Query'</code>
+   <td><code lang="bash">select value from system.metrics where metric='Query'</code>
    </td>
-   <td>
-<code>Critical</code>
+   <td><code lang="bash">Critical</code>
    </td>
   </tr>
   <tr>
    <td>Replication status
    </td>
-   <td>
-<code>$ curl 'http://localhost:8123/replicas_status'</code>
-<br />
-<code>Ok.</code>
+   <td><code lang="bash">$ curl 'http://localhost:8123/replicas_status'<br />OK.</code>
    </td>
-   <td>
-<code>High</code>
+   <td><code lang="bash">High</code>
    </td>
   </tr>
   <tr>
-   <td>Read only replicas (reflected by <code>replicas_status</code> as well)
+   <td>Read only replicas (reflected by <code lang="bash">replicas_status</code> as well)
    </td>
-   <td>
-<code>select value from system.metrics </code>
-<br />
-<code>where metric='ReadonlyReplica'</code>
+   <td><code lang="bash">select value from system.metrics where metric='ReadonlyReplica'</code>
    </td>
-   <td>
-<code>High</code>
+   <td><code lang="bash">High</code>
    </td>
   </tr>
   <tr>
    <td>Some replication tasks are stuck
    </td>
-   <td>
-<code>select count()</code>
-<br />
-<code>from system.replication_queue</code>
-<br />
-<code>where num_tries > 100</code>
+   <td><code lang="bash">select count() from system.replication_queue where num_tries > 100</code>
    </td>
-   <td>
-<code>High</code>
+   <td><code lang="bash">High</code>
    </td>
   </tr>
   <tr>
    <td>ZooKeeper is available
    </td>
-   <td>
-<code>select count() from system.zookeeper </code>
-<br />
-<code>where path='/'</code>
+   <td><code lang="bash">select count() from system.zookeeper where path='/'</code>
    </td>
-   <td>
-<code>Critical for writes</code>
+   <td><code lang="bash">Critical for writes</code>
    </td>
   </tr>
   <tr>
    <td>ZooKeeper exceptions
    </td>
-   <td>
-<code>select value from system.events </code>
-<br />
-<code>where event='ZooKeeperHardwareExceptions'</code>
+   <td><code lang="bash">select value from system.eventswhere event='ZooKeeperHardwareExceptions'</code>
    </td>
-   <td>
-<code>Medium</code>
+   <td><code lang="bash">Medium</code>
    </td>
   </tr>
   <tr>
    <td>Ensure CH nodes are available
    </td>
-   <td>
-<code>$ for node in `echo "select distinct host_address from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-` ; do curl "http://$node:8123/" --silent ; done | sort -u</code>
-<br />
-<code>Ok.</code>
+   <td><code lang="bash">$ for node in `echo "select distincthost_address from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-`; do curl "http://$node:8123/" --silent ; done | sort -u<br />OK.</code>
    </td>
-   <td>
-<code>High</code>
+   <td><code lang="bash">High</code>
    </td>
   </tr>
   <tr>
    <td>Ensure all CH clusters are available (i.e. every configured cluster has enough replicas to serve queries)
    </td>
-   <td>
-<code>for cluster in `echo "select distinct cluster from system.clusters where host_name !='localhost'" | curl 'http://localhost:8123/' --silent --data-binary @-` ; do clickhouse-client --query="select '$cluster', 'OK' from cluster('$cluster', system, one)" ; done </code>
+   <td><code lang="bash">for cluster in `echo "select distinct cluster from system.clusters where host_name !='localhost'" <br/>| curl 'http://localhost:8123/' --silent --data-binary @-` ; do clickhouse-client --query="select '$cluster', 'OK' from cluster('$cluster', system, one)" ; done </code>
    </td>
-   <td>
-<code>Critical</code>
+   <td><code lang="bash">Critical</code>
    </td>
   </tr>
   <tr>
    <td>There are files in 'detached' folders
    </td>
-   <td>
-<code>select count() from system.detached_parts</code>
+   <td><code lang="bash">select count() from system.detached_parts</code>
    </td>
-   <td>
-<code>Medium</code>
+   <td><code lang="bash">Medium</code>
    </td>
   </tr>
   <tr>
    <td>Too many parts problems, including: \
-Number of parts is growing; \
-Inserts are being delayed; \
-Inserts are being rejected
+    Number of parts is growing; \
+    Inserts are being delayed; \
+    Inserts are being rejected
    </td>
-   <td>
-<code>select value from system.asynchronous_metrics </code>
-<br />
-<code>where metric='MaxPartCountForPartition'; </code>
-<br />
-<code>select value from system.events/system.metrics </code>
-<br />
-<code>where event/metric='DelayedInserts'; \
+   <td><code lang="bash">select value from system.asynchronous_metricswhere metric='MaxPartCountForPartition';
+select value from system.events/system.metrics </code>
+
+<code lang="bash">where event/metric='DelayedInserts'; \
 select value from system.events </code>
-<br />
-<code>where event='RejectedInserts'</code>
+
+<code lang="bash">where event='RejectedInserts'</code>
    </td>
-   <td>
-<code>Critical</code>
+   <td><code lang="bash">Critical</code>
    </td>
   </tr>
   <tr>
    <td>Dictionaries: exception
    </td>
-   <td>
-<code>select concat(name, ': ', last_exception) </code>
-<br />
-<code>from system.dictionaries</code>
-<br />
-<code>where last_exception != ''</code>
+   <td><code lang="bash">select concat(name,': ',last_exception)from system.dictionarieswhere last_exception != ''</code>
    </td>
-   <td>
-<code>Medium</code>
+   <td><code lang="bash">Medium</code>
    </td>
   </tr>
   <tr>
    <td>Time since last ClickHouse server restart.
    </td>
-   <td>
-<code>select uptime(); </code>
-<br />
-<code>select value from system.asynchronous_metrics </code>
-<br />
-<code>where metric='Uptime'</code>
+   <td><code lang="bash">select uptime();select value from system.asynchronous_metricswhere metric='Uptime'</code>
    </td>
-   <td>
-<code>(None)</code>
+   <td><code lang="bash">(None)</code>
    </td>
   </tr>
   <tr>
    <td>DistributedFilesToInsert should not be always increasing
    </td>
-   <td>
-<code>select value from system.metrics </code>
-<br />
-<code>where metric='DistributedFilesToInsert'</code>
+   <td><code lang="bash">select value from system.metricswhere metric='DistributedFilesToInsert'</code>
    </td>
-   <td>
-<code>Medium</code>
+   <td><code lang="bash">Medium</code>
    </td>
   </tr>
   <tr>
    <td>A data part was lost
    </td>
-   <td>
-<code>select value from system.events </code>
-<br />
-<code>where event='ReplicatedDataLoss'</code>
+   <td><code lang="bash">select value from system.eventswhere event='ReplicatedDataLoss'</code>
    </td>
-   <td>
-<code>High</code>
+   <td><code lang="bash">High</code>
    </td>
   </tr>
   <tr>
    <td>Data parts are not the same on different replicas
    </td>
-   <td>
-<code>select value from system.events where event='DataAfterMergeDiffersFromReplica'; \
-select value from system.events where event='DataAfterMutationDiffersFromReplica'</code>
+   <td><code lang="bash">select value from system.events where event='DataAfterMergeDiffersFromReplica'; <br/>select value from system.events where event='DataAfterMutationDiffersFromReplica'</code>
    </td>
-   <td>
-<code>Medium</code>
+   <td><code lang="bash">Medium</code>
    </td>
   </tr>
 </table>
 
 ### Common Metrics
 
-Altinity includes the following system table properties in its internal metrics dashboards.  
+Altinity includes the following system table properties in its internal metrics dashboards..
 
 <table>
   <tr>
-   <td><strong>System Table</strong>
-   </td>
-   <td><strong>Property</strong>
-   </td>
-   <td><strong>Description</strong>
-   </td>
+   <th>System Table
+   </th>
+   <th>Property
+   </th>
+   <th>Description
+   </th>
   </tr>
   <tr>
    <td>asynchronous_metrics
@@ -436,7 +372,7 @@ Altinity includes the following system table properties in its internal metrics 
 
 Basic metrics for hosts should be monitored at a minimum, including:
 
-*   CPU utilization
-*   Total and free memory
-*   Total and available storage space and number of inodes
-*   I/O rates on network and storage
+* CPU utilization
+* Total and free memory
+* Total and available storage space and number of inodes
+* I/O rates on network and storage

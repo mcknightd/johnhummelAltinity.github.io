@@ -6,62 +6,11 @@ order: 2
 ---
 Organizations that run ClickHouse successfully share the following general characteristics.
 
-
-<table>
-  <tr>
-   <th><strong>Principle</strong>
-   </th>
-   <th><strong>Pattern</strong>
-   </th>
-   <th><strong>Anti-Pattern</strong>
-   </th>
-  </tr>
-  <tr>
-   <td>Assignment of responsibility
-   </td>
-   <td>Designated personnel access production environments and only for designated tasks
-   </td>
-   <td>Personnel randomly access production for any reason
-   </td>
-  </tr>
-  <tr>
-   <td>Configuration control
-   </td>
-   <td>The production environment is carefully controlled and changes from one known state to another with changes planned/approved in advance
-   </td>
-   <td>Changes are made willy-nilly and without approval
-   </td>
-  </tr>
-  <tr>
-   <td>Automation
-   </td>
-   <td>Procedures are automated using appropriate mechanisms like Ansible, CI/CD pipelines, Terraform, or similar tools
-   </td>
-   <td>Procedures are performed manually across large clusters
-   </td>
-  </tr>
-  <tr>
-   <td>Monitoring
-   </td>
-   <td>All facets of the production environment including ClickHouse and Zookeeper are monitored in real-time with access to history and automatic alerting
-   </td>
-   <td>Administrators run manual queries to check production state
-   </td>
-  </tr>
-  <tr>
-   <td>Thorough Testing
-   </td>
-   <td>Changes and new configurations are tested carefully in preprod environments using data and load that is as similar to production as possible
-   </td>
-   <td>New configurations are deployed directly to prod without load or upgrade testing
-   </td>
-  </tr>
-  <tr>
-   <td>Canary Deployment
-   </td>
-   <td>Major upgrades are introduced to production in incremental steps with tested rollback procedures
-   </td>
-   <td>Major upgrades are applied to all nodes simultaneously without “bake-in”
-   </td>
-  </tr>
-</table>
+|Principle|Pattern|Anti-Pattern|
+|---|---|---|
+|Assignment of responsibility|Designated personnel access production environments and only for designated tasks|Personnel randomly access production for any reason|
+|Configuration control|The production environment is carefully controlled and changes from one known state to another with changes planned/approved in advance|Changes are made willy-nilly and without approval|
+|Automation|Procedures are automated using appropriate mechanisms like Ansible, CI/CD pipelines, Terraform, or similar tools|Procedures are performed manually across large clusters|
+|Monitoring|All facets of the production environment including ClickHouse and Zookeeper are monitored in real-time with access to history and automatic alerting|Administrators run manual queries to check production state|
+|Thorough Testing|Changes and new configurations are tested carefully in prepared environments using data and load that is as similar to production as possible|New configurations are deployed directly to prod without load or upgrade testing|
+|Canary Deployment|Major upgrades are introduced to production in incremental steps with tested rollback procedures|Major upgrades are applied to all nodes simultaneously without “bake-in”|
