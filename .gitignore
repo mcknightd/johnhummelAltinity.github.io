@@ -5,5 +5,4 @@ _site
 vendor
 .DS_Store
 Gemfile.lock
-site/
 .vscode/settings.json
