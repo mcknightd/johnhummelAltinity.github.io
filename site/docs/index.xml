@@ -1,0 +1,367 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Altinity – Documentation</title>
+    <link>/docs/</link>
+    <description>Recent content in Documentation on Altinity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Account Creation and Login</title>
+      <link>/docs/altinitycloud/quickstartguide/createaccount/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/altinitycloud/quickstartguide/createaccount/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;create-an-account&#34;&gt;&lt;strong&gt;Create an Account&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;To start your Altinity.Cloud journey, the first thing you need is an account.  New users can sign up for a test account on the &lt;a href=&#34;https://altinity.com/altinity-cloud-test-drive/&#34;&gt;Altinity.Cloud Test Drive&lt;/a&gt; page.  Enter your contact information, and an Altinity.Cloud rep will get right with you.&lt;/p&gt;
+&lt;p&gt;Once finished, the Altinity.Cloud team will reach out to you with your login credentials.  Altinity.Cloud uses your email address as your username, and you’ll be assigned an initial password.&lt;/p&gt;
+&lt;h2 id=&#34;login-to-altinitycloud&#34;&gt;&lt;strong&gt;Login to Altinity.Cloud&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;There are two methods to login:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#login-with-username-and-password&#34;&gt;Login with Username and Password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#login-with-auth0&#34;&gt;Login with Auth0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;login-with-username-and-password&#34;&gt;Login with Username and Password&lt;/h3&gt;
+&lt;p&gt;If you’ve used any web site, you’re likely familiar with this process.&lt;/p&gt;
+&lt;p&gt;To login to Altinity.Cloud with your username and password:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Enter your username - in this case your email address - in the field marked &lt;strong&gt;Login&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter your &lt;strong&gt;Password&lt;/strong&gt;, then click &lt;strong&gt;Sign In&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;login-with-auth0&#34;&gt;Login with Auth0&lt;/h3&gt;
+&lt;p&gt;Auth0 allows you to authenticate to Altinity.Cloud through a trusted authentication provider, in this case Google.  Once set up, you can click &lt;strong&gt;Auth0&lt;/strong&gt; to automatically login.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Requirements&lt;/strong&gt;: In order to use Auth0, you must have a Google account with the same email address that you use for Altinity.Cloud.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To setup authentication with Auth0 for the first time:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Access the Altinity.Cloud page.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Auth0&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Select the Google account to use for authentication.&lt;br&gt;
+&lt;strong&gt;IMPORTANT NOTE&lt;/strong&gt;: The Google account must have the same email address as your Altinity.Cloud account.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Continue with Google&lt;/strong&gt;, and you’ll be in Altinity.Cloud.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After you’ve completed the Auth0 setup process, you can login to Altinity.Cloud by selecting &lt;strong&gt;Auth0&lt;/strong&gt; from the login page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Explore Altinity.Cloud Manager</title>
+      <link>/docs/altinitycloud/quickstartguide/explorealtinitycloudmanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/altinitycloud/quickstartguide/explorealtinitycloudmanager/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;explore-altinity-cloud-manager&#34;&gt;&lt;strong&gt;Explore Altinity Cloud Manager&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Once you’ve logged in to Altinity.Cloud, let’s take a moment and familiarize ourselves with the environment.  The default page is the &lt;strong&gt;Altinity Cloud Manager&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The Altinity Cloud Manager page is separated into the following sections:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/AltinityCloud_CloudManager_view_marked.png&#34; alt=&#34;Altinity Cloud Manager&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;A&lt;/strong&gt;: Cluster Creation: Clusters can be created from scratch with &lt;strong&gt;Launch Cluster&lt;/strong&gt;, or the structure and settings configured with JSON through &lt;strong&gt;Import&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;B&lt;/strong&gt;: Clusters:  Each cluster associated with your Altinity.Cloud account is listed in either tile format, or as a short list.  They’ll display a short summary of their health and performance.  By selecting a cluster, you can view the full details.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C&lt;/strong&gt;: User Management:  Change which organization you are currently working in and update your Account Settings.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Your First Queries</title>
+      <link>/docs/altinitycloud/quickstartguide/yourfirstqueries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/altinitycloud/quickstartguide/yourfirstqueries/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Once your cluster is created, time to create some tables and do some queries.&lt;/p&gt;
+&lt;p&gt;For those experienced with ClickHouse, this will be very familiar.  For people who are new to ClickHouse, creating tables is very similar to other SQL based databases, with some extra syntax that defines the type of table we’re making.  This is part of what gives ClickHouse its speed.  For complete details on ClickHouse commands, see the&lt;a href=&#34;https://clickhouse.tech/docs/en/sql-reference/syntax/&#34;&gt; ClickHouse SQL Reference Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;cluster-explore&#34;&gt;&lt;strong&gt;Cluster Explore&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The Cluster Explore page allows you to run queries, view the schema, and check on processes for your cluster.  It’s a quick way of getting into your ClickHouse database, run commands and view your schema straight from your web browser.  We’ll be using this to generate our first tables and input some data.&lt;/p&gt;
+&lt;p&gt;To access Cluster Explore for your cluster, just click &lt;strong&gt;Explore&lt;/strong&gt; for the specific cluster to manage.&lt;/p&gt;
+&lt;p&gt;For our example, we’re going to create two tables:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;events_local&lt;/strong&gt;:  This table will use the ReplicatedMergeTree table engine.  If you don’t know about table engines, don’t worry about that for now.  See the&lt;a href=&#34;https://clickhouse.tech/docs/en/engines/table-engines/&#34;&gt; ClickHouse Engines pag&lt;/a&gt;e for complete information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;events&lt;/strong&gt;: This table will be distributed on your cluster with the Distributed table engine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In our examples, we’ll be using macro variables - these are placed between curly brackets and let us use the same SQL commands on different clusters and environments without having to fill in every detail.  Any time you see an entry like &lt;code&gt;{cluster}&lt;/code&gt; or &lt;code&gt;{shard}&lt;/code&gt; you should recognize those as a macro variable.&lt;/p&gt;
+&lt;p&gt;The commands below will create these tables into the &lt;strong&gt;default&lt;/strong&gt; database on your cluster.&lt;/p&gt;
+&lt;h3 id=&#34;create-tables&#34;&gt;&lt;strong&gt;Create Tables&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;To create your first tables:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;From the &lt;strong&gt;Altinity Cloud Manager&lt;/strong&gt; select &lt;strong&gt;Explore&lt;/strong&gt; for the cluster to manage**.**&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select &lt;strong&gt;Query&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For our first table, copy and paste the following into the &lt;strong&gt;Query&lt;/strong&gt; window, then select &lt;strong&gt;Execute&lt;/strong&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;CREATE TABLE IF NOT EXISTS events_local ON CLUSTER &amp;lsquo;{cluster}&amp;rsquo; (
+event_date  Date,
+event_type  Int32,
+article_id  Int32,
+title       String
+) ENGINE = ReplicatedMergeTree(&#39;/clickhouse/{cluster}/tables/{shard}/{database}/{table}&#39;, &amp;lsquo;{replica}&#39;)
+PARTITION BY toYYYYMM(event_date)
+ORDER BY (event_type, article_id);&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+
+
+ 
+
+
+    You should see the following under **Execute** confirming the commands ran, just replacing **docdemo** with your cluster:
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;docdemo.demo.beta.altinity.cloud:8443 (query time: 0.342s)
+chi-docdemo-docdemo-0-0	9000 0	 	1	0
+chi-docdemo-docdemo-0-1	9000 0	 	0	0&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+
+ 
+
+
+
+4. Now let’s create our second table.  Back in the **Query** window, enter the following and select **Execute**:
+
+    ```
+CREATE TABLE events ON CLUSTER &#39;{cluster}&#39; AS events_local
+    ENGINE = Distributed(&#39;{cluster}&#39;, default, events_local, rand())
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;Once again, you should see confirmation under **Execute**:
+
+
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;docdemo.demo.beta.altinity.cloud:8443 (query time: 0.162s)
+chi-docdemo-docdemo-0-0	9000 0	 	1	0
+chi-docdemo-docdemo-0-1	9000 0	 	0	0&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+
+5. Now that we have some tables, let’s not leave them empty.  Inserting data into a ClickHouse table is very similar to most SQL systems.  Let’s Insert our data, then do a quick Select on it.  Enter the following Insert command into **Query**, then select **Execute**:
+
+    ```
+INSERT INTO events VALUES(today(), 1, 13, &#39;Example&#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;You’ll see the results confirmed under **Execute**, just like before.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;OK.
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;Then enter the following **Select** command and select **Execute** again: \
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;SELECT * FROM events;
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;The results will look like the following:
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;docdemo.demo.beta.altinity.cloud:8443 (query time: 0.018s)
+┌─event_date─┬─event_type─┬─article_id─┬─title───┐
+│ 2020-11-19 │          1 │         13 │ Example │
+└────────────┴────────────┴────────────┴─────────┘
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;view-schema&#34;&gt;&lt;strong&gt;View Schema&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The Database Schema shows a graphical view of your cluster’s database, the tables in it, and their structure.&lt;/p&gt;
+&lt;p&gt;To view your Schema:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;From the &lt;strong&gt;Altinity Cloud Manager&lt;/strong&gt; select &lt;strong&gt;Explore&lt;/strong&gt; for the cluster to manage**.**&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Schema&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can expand the databases to display the tables in each database, or select the table to view its details, schema, and some sample rows.&lt;/p&gt;
+&lt;h3 id=&#34;view-processes&#34;&gt;&lt;strong&gt;View Processes&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;To view current actions running on your cluster select &lt;strong&gt;Processes&lt;/strong&gt;.  This displays what processes are currently running, what user account they are running under, and allows you to view more details regarding the process.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Connect Remote Clients</title>
+      <link>/docs/altinitycloud/quickstartguide/connectclient/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/altinitycloud/quickstartguide/connectclient/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Now that we’ve shown how to create a cluster and use ClickHouse SQL queries into your new cluster, let’s connect to it remotely.&lt;/p&gt;
+&lt;p&gt;For the following, we’re going to be using the clickhouse-client program, but the same process will help you gain access from your favorite client.&lt;/p&gt;
+&lt;p&gt;Full instructions for installing ClickHouse can be found on the&lt;a href=&#34;https://clickhouse.tech/docs/en/getting-started/install/&#34;&gt; ClickHouse Installation page&lt;/a&gt;.  We’ll keep this simple and assume you’re using a Linux environment like Ubuntu.  For this example, we set up a virtual machine running Ubuntu 20.04.&lt;/p&gt;
+&lt;p&gt;First, we need to know our connection details for our Altinity.Cloud ClickHouse cluster.  To view your connection details:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;From the Altinity Cloud Manager, select &lt;strong&gt;Access Point&lt;/strong&gt; for the cluster to manage.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From here, you can copy and paste the settings for the ClickHouse client.  For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;clickhouse-client -h yourdataset.yourcluster.altinity.cloud &amp;ndash;port 9440 -s &amp;ndash;user=admin &amp;ndash;password&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+
+
+
+## **ClickHouse Client**
+
+The ClickHouse Client is a command line based program that will be familiar 
+
+
+### **Setting Up ClickHouse Client in Linux**
+
+If you’ve already set up ClickHouse client, then you can skip this step.
+
+ 
+
+For those who need quick instructions on how to install ClickHouse client in their deb based Linux environment (like Ubuntu), use the following:
+
+
+
+*   **IMPORTANT NOTE**: As of this document’s publication, version 20.13 and above of the ClickHouse client is required to connect with the SNI enabled clusters.  These instructions use the testing version of that client.  An updated official stable build is expected to be released soon.
+
+ 
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;sudo apt-get install apt-transport-https ca-certificates dirmngr
+sudo apt-key adv &amp;ndash;keyserver hkp://keyserver.ubuntu.com:80 &amp;ndash;recv E0C56BD4&lt;/p&gt;
+&lt;p&gt;echo &amp;ldquo;deb &lt;a href=&#34;https://repo.clickhouse.tech/deb/testing/&#34;&gt;https://repo.clickhouse.tech/deb/testing/&lt;/a&gt; main/&amp;rdquo; | sudo tee&lt;br&gt;
+/etc/apt/sources.list.d/clickhouse.list
+sudo apt-get update&lt;/p&gt;
+&lt;p&gt;sudo apt-get install -y clickhouse-client&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+
+ 
+
+
+### **Connect With ClickHouse Client**
+
+If your ClickHouse client is ready, then you can copy and paste your connection settings into your favorite terminal program, and you’ll be connected.
+
+
+
+&amp;lt;p id=&amp;quot;gdcalert2&amp;quot; &amp;gt;&amp;lt;span style=&amp;quot;color: red; font-weight: bold&amp;quot;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. &amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;(&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;Back to top&amp;lt;/a&amp;gt;)(&amp;lt;a href=&amp;quot;#gdcalert3&amp;quot;&amp;gt;Next alert&amp;lt;/a&amp;gt;)&amp;lt;br&amp;gt;&amp;lt;span style=&amp;quot;color: red; font-weight: bold&amp;quot;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;
+
+
+![alt_text](images/image2.png &amp;quot;image_tooltip&amp;quot;)
+
+
+
+## **ClickHouse Python Driver**
+
+For users who prefer Python, they can use the **clickhouse-driver **to connect through Python.  These instructions are very minimal, and are intended just to get you working in Python with your new Altinity.Cloud cluster.
+
+ 
+
+These instructions are in the `bash` shell and require the following be installed in your environment:
+
+ 
+
+
+
+*   `Python 3.7` and above
+*   The Python module venv
+*   `git`
+
+ 
+
+
+
+*   **IMPORTANT NOTE**: We will be using clickhouse-driver v0.1.6 development build, which has support for Server Name Indication (SNI) when using TLS communications.
+
+ 
+
+To connect with the Python clickhouse-driver:
+
+ 
+
+
+
+1. **(Optional)** Setup your local environment.  For example: \
+
+
+    ```
+python3 -m venv test 
+. test/bin/activate
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Install the driver with pip3: \&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;pip3 install git+https://github.com/mymarilyn/clickhouse-driver@master#egg=clickhouse-driver&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+
+3. Start Python.
+4. Add the client and connection details.  Cluster Explore provides the necessary information to link directly to your cluster.
+
+
+
+&amp;lt;p id=&amp;quot;gdcalert3&amp;quot; &amp;gt;&amp;lt;span style=&amp;quot;color: red; font-weight: bold&amp;quot;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. &amp;lt;/span&amp;gt;&amp;lt;br&amp;gt;(&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;Back to top&amp;lt;/a&amp;gt;)(&amp;lt;a href=&amp;quot;#gdcalert4&amp;quot;&amp;gt;Next alert&amp;lt;/a&amp;gt;)&amp;lt;br&amp;gt;&amp;lt;span style=&amp;quot;color: red; font-weight: bold&amp;quot;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; &amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;
+
+
+![alt_text](images/image3.png &amp;quot;image_tooltip&amp;quot;)
+
+
+Import the clickhouse_driver client and enter the connection settings:
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;from clickhouse_driver import Client
+client = Client(&#39;&lt;HOSTNAME&gt;&#39;, user=&amp;lsquo;admin&amp;rsquo;, password=&lt;PASSWORD&gt;, port=9440, secure=&amp;lsquo;y&amp;rsquo;, verify=False)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+
+ 
+
+5.         	Run client.execute and submit your query.  Let’s just look at the tables from within Python:
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;client.execute(&amp;lsquo;SHOW TABLES in default&amp;rsquo;)
+[(&amp;lsquo;events&amp;rsquo;,), (&amp;lsquo;events_local&amp;rsquo;,)]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;
+
+ 
+
+6.         	You can perform selects and inserts as you need.  For example, continuing from our[ Your First Querie](https://docs.google.com/document/d/1skoWxs8UJcfaAPW0d5hA6DkTsBN3QJRFil_BmS9_YOA/edit#heading=h.pwrx6f4309bl)s using **Cluster Explore** above:
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;result = client.execute(&amp;lsquo;SELECT * FROM default.events&amp;rsquo;)
+print(result)
+[(datetime.date(2020, 11, 23), 1, 13, &amp;lsquo;Example&amp;rsquo;)]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;
+For more information see the article[ Clickhouse And Python: Getting To Know The Clickhouse-driver Client](https://altinity.com/blog/clickhouse-and-python-getting-to-know-the-clickhouse-driver-client).
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>/docs/altinitycloud/quickstartguide/createfirstcluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/altinitycloud/quickstartguide/createfirstcluster/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
