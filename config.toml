@@ -1,7 +1,7 @@
 baseURL = "/"
 title = "Altinity Documentation"
 
-publishDir = "site"
+publishDir = "docs"
 
 enableRobotsTXT = true
 
