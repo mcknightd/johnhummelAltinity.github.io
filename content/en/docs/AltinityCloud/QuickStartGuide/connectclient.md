@@ -8,28 +8,17 @@ description: >
 
 Now that we’ve shown how to create a cluster and use ClickHouse SQL queries into your new cluster, let’s connect to it remotely.
 
- 
-
 For the following, we’re going to be using the clickhouse-client program, but the same process will help you gain access from your favorite client.
-
- 
 
 Full instructions for installing ClickHouse can be found on the[ ClickHouse Installation page](https://clickhouse.tech/docs/en/getting-started/install/).  We’ll keep this simple and assume you’re using a Linux environment like Ubuntu.  For this example, we set up a virtual machine running Ubuntu 20.04.
 
- 
-
 First, we need to know our connection details for our Altinity.Cloud ClickHouse cluster.  To view your connection details:
-
- 
-
-
 
 1. From the Altinity Cloud Manager, select **Access Point** for the cluster to manage.
 2. From here, you can copy and paste the settings for the ClickHouse client.  For example: 
-
     ```
-clickhouse-client -h yourdataset.yourcluster.altinity.cloud --port 9440 -s --user=admin --password
-```
+    clickhouse-client -h yourdataset.yourcluster.altinity.cloud --port 9440 -s --user=admin --password
+    ```
 
 
 
