@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Altinity – Altinity.Cloud</title>
+    <title>Altinity Documentation – Altinity.Cloud</title>
     <link>/docs/altinitycloud/</link>
-    <description>Recent content in Altinity.Cloud on Altinity</description>
+    <description>Recent content in Altinity.Cloud on Altinity Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="/docs/altinitycloud/index.xml" rel="self" type="application/rss+xml" />
@@ -28,7 +28,7 @@
     </item>
     
     <item>
-      <title>Docs: </title>
+      <title>Docs: Quick Start Guide</title>
       <link>/docs/altinitycloud/quickstartguide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -36,7 +36,18 @@
       <description>
         
         
-        
+        &lt;p&gt;Welcome to Altinity.Cloud! Altinity.Cloud is the fastest, easiest way to set up, administer, and use ClickHouse.  Your ClickHouse are fully managed so you can focus on your work.&lt;/p&gt;
+&lt;p&gt;If this is your first time using Altinity.Cloud, this quick start guide will give you the minimum steps to become familiar with the system.  When you’re ready to dig deeper and use the full power of ClickHouse in your Altinity.Cloud environment, check out our Administrator and Developer Guides for in depth knowledge and best practices.&lt;/p&gt;
+&lt;p&gt;The Quick Start Guide is focused on these 6 major steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1skoWxs8UJcfaAPW0d5hA6DkTsBN3QJRFil_BmS9_YOA/edit#heading=h.3zy1ewmtj9ej&#34;&gt;Create an Account&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1skoWxs8UJcfaAPW0d5hA6DkTsBN3QJRFil_BmS9_YOA/edit#heading=h.4gj1m5q2krzt&#34;&gt;Login to Altinity.Cloud&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1skoWxs8UJcfaAPW0d5hA6DkTsBN3QJRFil_BmS9_YOA/edit#heading=h.emla9q2pcpzr&#34;&gt;Explore Altinity Cloud Manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1skoWxs8UJcfaAPW0d5hA6DkTsBN3QJRFil_BmS9_YOA/edit#heading=h.ciyu6ameblon&#34;&gt;Create your First Cluster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1skoWxs8UJcfaAPW0d5hA6DkTsBN3QJRFil_BmS9_YOA/edit#heading=h.pwrx6f4309bl&#34;&gt;Your First Queries&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/document/d/1skoWxs8UJcfaAPW0d5hA6DkTsBN3QJRFil_BmS9_YOA/edit#heading=h.1ci1o6gc0wfc&#34;&gt;Connect to Cluster From a Remote Client&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
       </description>
     </item>
     
