@@ -5,16 +5,15 @@ weight: 2
 description: >
     How to set up your Altinity.Cloud account, and login to the service.
 ---
-
-## **Create an Account**
+## Create an Account
 
 To start your Altinity.Cloud journey, the first thing you need is an account.  New users can sign up for a test account on the [Altinity.Cloud Test Drive](https://altinity.com/altinity-cloud-test-drive/) page.  Enter your contact information, and an Altinity.Cloud rep will get right with you.
 
 Once finished, the Altinity.Cloud team will reach out to you with your login credentials.  Altinity.Cloud uses your email address as your username, and you’ll be assigned an initial password.
 
-## **Login to Altinity.Cloud**
+## Login to Altinity.Cloud
 
-There are two methods to login: 
+There are two methods to login:
 
 * [Login with Username and Password](#login-with-username-and-password)
 * [Login with Auth0](#login-with-auth0)
