@@ -17,7 +17,7 @@ To access Cluster Explore for your cluster, just click **Explore** for the speci
 
 For our example, we’re going to create two tables:
 
-* **events_local**:  This table will use the ReplicatedMergeTree table engine.  If you don’t know about table engines, don’t worry about that for now.  See the[ClickHouse Engines page](https://clickhouse.tech/docs/en/engines/table-engines/) for complete information.
+* **events_local**:  This table will use the ReplicatedMergeTree table engine.  If you don’t know about table engines, don’t worry about that for now.  See the [ClickHouse Engines page](https://clickhouse.tech/docs/en/engines/table-engines/) for complete information.
 * **events**: This table will be distributed on your cluster with the Distributed table engine.
 
 In our examples, we’ll be using macro variables - these are placed between curly brackets and let us use the same SQL commands on different clusters and environments without having to fill in every detail.  Any time you see an entry like `{cluster}` or `{shard}` you should recognize those as a macro variable.

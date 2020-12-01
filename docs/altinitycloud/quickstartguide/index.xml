@@ -225,7 +225,7 @@
 &lt;p&gt;To access Cluster Explore for your cluster, just click &lt;strong&gt;Explore&lt;/strong&gt; for the specific cluster to manage.&lt;/p&gt;
 &lt;p&gt;For our example, we’re going to create two tables:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;events_local&lt;/strong&gt;:  This table will use the ReplicatedMergeTree table engine.  If you don’t know about table engines, don’t worry about that for now.  See the&lt;a href=&#34;https://clickhouse.tech/docs/en/engines/table-engines/&#34;&gt;ClickHouse Engines page&lt;/a&gt; for complete information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;events_local&lt;/strong&gt;:  This table will use the ReplicatedMergeTree table engine.  If you don’t know about table engines, don’t worry about that for now.  See the &lt;a href=&#34;https://clickhouse.tech/docs/en/engines/table-engines/&#34;&gt;ClickHouse Engines page&lt;/a&gt; for complete information.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;events&lt;/strong&gt;: This table will be distributed on your cluster with the Distributed table engine.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In our examples, we’ll be using macro variables - these are placed between curly brackets and let us use the same SQL commands on different clusters and environments without having to fill in every detail.  Any time you see an entry like &lt;code&gt;{cluster}&lt;/code&gt; or &lt;code&gt;{shard}&lt;/code&gt; you should recognize those as a macro variable.&lt;/p&gt;
