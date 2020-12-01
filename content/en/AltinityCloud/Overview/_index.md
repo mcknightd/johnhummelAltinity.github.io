@@ -6,4 +6,4 @@ description: >
     A quick overview of the Altinity.Cloud.
 ---
 
-How it works, get an account, etc.
+Do we really need an Overview section?  Haven't decided yet.
