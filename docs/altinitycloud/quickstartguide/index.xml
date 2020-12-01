@@ -1,0 +1,425 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Altinity Documentation – Quick Start Guide</title>
+    <link>/altinitycloud/quickstartguide/</link>
+    <description>Recent content in Quick Start Guide on Altinity Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/altinitycloud/quickstartguide/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>AltinityCloud: Account Creation and Login</title>
+      <link>/altinitycloud/quickstartguide/createaccount/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/altinitycloud/quickstartguide/createaccount/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;create-an-account&#34;&gt;Create an Account&lt;/h2&gt;
+&lt;p&gt;To start your Altinity.Cloud journey, the first thing you need is an account.  New users can sign up for a test account on the &lt;a href=&#34;https://altinity.com/altinity-cloud-test-drive/&#34;&gt;Altinity.Cloud Test Drive&lt;/a&gt; page.  Enter your contact information, and an Altinity.Cloud rep will get right with you.&lt;/p&gt;
+&lt;p&gt;Once finished, the Altinity.Cloud team will reach out to you with your login credentials.  Altinity.Cloud uses your email address as your username, and you’ll be assigned an initial password.&lt;/p&gt;
+&lt;h2 id=&#34;login-to-altinitycloud&#34;&gt;Login to Altinity.Cloud&lt;/h2&gt;
+&lt;p&gt;There are two methods to login:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#login-with-username-and-password&#34;&gt;Login with Username and Password&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#login-with-auth0&#34;&gt;Login with Auth0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;login-with-username-and-password&#34;&gt;Login with Username and Password&lt;/h3&gt;
+&lt;p&gt;If you’ve used any web site, you’re likely familiar with this process.&lt;/p&gt;
+&lt;p&gt;To login to Altinity.Cloud with your username and password:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Enter your username - in this case your email address - in the field marked &lt;strong&gt;Login&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Enter your &lt;strong&gt;Password&lt;/strong&gt;, then click &lt;strong&gt;Sign In&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;login-with-auth0&#34;&gt;Login with Auth0&lt;/h3&gt;
+&lt;p&gt;Auth0 allows you to authenticate to Altinity.Cloud through a trusted authentication provider, in this case Google.  Once set up, you can click &lt;strong&gt;Auth0&lt;/strong&gt; to automatically login.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Requirements&lt;/strong&gt;: In order to use Auth0, you must have a Google account with the same email address that you use for Altinity.Cloud.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To setup authentication with Auth0 for the first time:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Access the Altinity.Cloud page.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Auth0&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Select the Google account to use for authentication.&lt;br&gt;
+&lt;strong&gt;IMPORTANT NOTE&lt;/strong&gt;: The Google account must have the same email address as your Altinity.Cloud account.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Continue with Google&lt;/strong&gt;, and you’ll be in Altinity.Cloud.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After you’ve completed the Auth0 setup process, you can login to Altinity.Cloud by selecting &lt;strong&gt;Auth0&lt;/strong&gt; from the login page.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>AltinityCloud: Explore Altinity Cloud Manager</title>
+      <link>/altinitycloud/quickstartguide/explorealtinitycloudmanager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/altinitycloud/quickstartguide/explorealtinitycloudmanager/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;explore-altinity-cloud-manager&#34;&gt;Explore Altinity Cloud Manager&lt;/h2&gt;
+&lt;p&gt;Once you’ve logged in to Altinity.Cloud, let’s take a moment and familiarize ourselves with the environment.  The default page is the &lt;strong&gt;Altinity Cloud Manager&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The Altinity Cloud Manager page is separated into the following sections:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/altinitycloud/AltinityCloud_CloudManager_view_marked.png&#34; alt=&#34;Altinity Cloud Manager&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;A&lt;/strong&gt;: Cluster Creation: Clusters can be created from scratch with &lt;strong&gt;Launch Cluster&lt;/strong&gt;, or the structure and settings configured with JSON through &lt;strong&gt;Import&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;B&lt;/strong&gt;: Clusters:  Each cluster associated with your Altinity.Cloud account is listed in either tile format, or as a short list.  They’ll display a short summary of their health and performance.  By selecting a cluster, you can view the full details.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;C&lt;/strong&gt;: User Management:  Change which organization you are currently working in and update your Account Settings.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>AltinityCloud: Create Your First Cluster</title>
+      <link>/altinitycloud/quickstartguide/createfirstcluster/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/altinitycloud/quickstartguide/createfirstcluster/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Time to make your first cluster!  For this example, we’re creating a minimally sized cluster, but you can upgrade your cluster later to make it the exact size you need for your ClickHouse needs.&lt;/p&gt;
+&lt;p&gt;To create your first cluster:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;From the Altinity Cloud Manager page, select &lt;strong&gt;Launch Cluster&lt;/strong&gt;.  This starts the &lt;strong&gt;Cluster Launch Wizard&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;The first page is &lt;strong&gt;Resources Configuration&lt;/strong&gt;, where we set the name, size and authentication for the new cluster.  When finished, click &lt;strong&gt;Next&lt;/strong&gt;.  Use the following settings:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Setting&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Whatever name you like.  &lt;br /&gt;Cluster names will be used to create the DNS name of the cluster.  Therefore, cluster names must follow DNS name restrictions (letters, numbers, and dashes allowed, periods and special characters are not).  &lt;br /&gt;Cluster names must be &lt;strong&gt;lower case&lt;/strong&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Node Type&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Select &lt;strong&gt;m5.large&lt;/strong&gt;  &lt;br /&gt;This is the size of the node.  This selection gives us a cluster with 2 CPUs and 6.5 Gb RAM.  Recall that we can upgrade this cluster later.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Node Storage&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Set to &lt;strong&gt;30 Gb&lt;/strong&gt;.  &lt;br /&gt;The size of each Cluster node in Gb (gigabytes).  Each node will have the same storage area.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Number of Volumes&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Set to &lt;strong&gt;1&lt;/strong&gt;. &lt;br /&gt;Network storage can be split into separate volumes.  Use more volumes to increase query performance.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Volume Type&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Select &lt;strong&gt;gp2 (Not Encrypted)&lt;/strong&gt;. &lt;br /&gt;Volumes can be either encrypted or unencrypted, depending on your security requirements.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Number of Shards&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Set to &lt;strong&gt;1&lt;/strong&gt;. &lt;br /&gt; The shard represents a set of nodes.  Shards can then be replicated to provide increased availability and recovery.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ClickHouse Version&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Select &lt;strong&gt;the most recent Altinity Stable Release&lt;/strong&gt;. &lt;br /&gt; Your ClickHouse cluster can use the version that best meets your needs.  Note that &lt;strong&gt;all nodes will run the same ClickHouse version&lt;/strong&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ClickHouse User Name&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Autoset to &lt;strong&gt;admin&lt;/strong&gt;. &lt;br /&gt;The default administrative user.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ClickHouse User Password&lt;/strong&gt; and &lt;strong&gt;Confirm Password&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Set to your security requirements.  Both the ClickHouse User Password and Confirm Password must match.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;The next page is High Availability Configuration.  This is where you can set your replication, Zookeeper, and backup options.  Use the following values for your first cluster, then click &lt;strong&gt;Next&lt;/strong&gt; to continue:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Setting&lt;/th&gt;
+&lt;th&gt;Value&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Data Replication&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Set to &lt;strong&gt;Enabled&lt;/strong&gt;. &lt;br /&gt;Data replication duplicates data across replica clusters for increased performance and availability.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Number of Replicas&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Set to &lt;strong&gt;2&lt;/strong&gt;. &lt;br /&gt;Only required if &lt;strong&gt;Data Replication&lt;/strong&gt; is &lt;strong&gt;Enabled&lt;/strong&gt;. &lt;br /&gt;Sets the number of replicas for each cluster shard.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Zookeeper Configuration&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Select &lt;strong&gt;Single Node &lt;strong&gt;for development and test clusters.&lt;/strong&gt;  &lt;strong&gt;Select&lt;/strong&gt; Three Nodes&lt;/strong&gt; for production usage. &lt;br /&gt;&lt;strong&gt;IMPORTANT NOTE&lt;/strong&gt;:  This setting cannot be changed later.  &lt;br /&gt;Apache Zookeeper manages synchronization between the clusters.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Zookeeper Node Type&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Default&lt;/strong&gt; is selected by default.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Node Placement&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Select &lt;strong&gt;Separate Nodes&lt;/strong&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Enable Backups&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Set to &lt;strong&gt;Enabled&lt;/strong&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;The &lt;strong&gt;Connection Configuration&lt;/strong&gt; page determines how to communicate with your new cluster.  Set the following values, then select &lt;strong&gt;Next&lt;/strong&gt; to continue:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;Setting&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Value&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;DNS Name&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;This is automatically set based on your cluster name.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Use TLS&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Set to &lt;strong&gt;Enabled&lt;/strong&gt;. &lt;br /&gt;When enabled, communications with your cluster are encrypted with TLS.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Load Balancer Type&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Select &lt;strong&gt;Altinity Edge Ingress&lt;/strong&gt;.  &lt;br /&gt;&lt;strong&gt;IMPORTANT NOTE&lt;/strong&gt;: This setting requires clients to support SNI (Server Name Indication).  This will require the most current Clickhouse client and Python clickhouse-driver. &lt;br /&gt;This setting cannot be changed after the cluster is created.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Last page!  &lt;strong&gt;Review &amp;amp; Launch&lt;/strong&gt; lets you double check your settings.  When you’re ready, click &lt;strong&gt;Launch&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It will take a few minutes before your new cluster is ready, so grab your coffee or tea or other hydrating beverage.  When it’s complete, you’ll see your new cluster with all nodes online and all health checks passed.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>AltinityCloud: Your First Queries</title>
+      <link>/altinitycloud/quickstartguide/yourfirstqueries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/altinitycloud/quickstartguide/yourfirstqueries/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Once your cluster is created, time to create some tables and do some queries.&lt;/p&gt;
+&lt;p&gt;For those experienced with ClickHouse, this will be very familiar.  For people who are new to ClickHouse, creating tables is very similar to other SQL based databases, with some extra syntax that defines the type of table we’re making.  This is part of what gives ClickHouse its speed.  For complete details on ClickHouse commands, see the &lt;a href=&#34;https://clickhouse.tech/docs/en/sql-reference/syntax/&#34;&gt;ClickHouse SQL Reference Guide&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;cluster-explore&#34;&gt;Cluster Explore&lt;/h3&gt;
+&lt;p&gt;The Cluster Explore page allows you to run queries, view the schema, and check on processes for your cluster.  It’s a quick way of getting into your ClickHouse database, run commands and view your schema straight from your web browser.  We’ll be using this to generate our first tables and input some data.&lt;/p&gt;
+&lt;p&gt;To access Cluster Explore for your cluster, just click &lt;strong&gt;Explore&lt;/strong&gt; for the specific cluster to manage.&lt;/p&gt;
+&lt;p&gt;For our example, we’re going to create two tables:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;events_local&lt;/strong&gt;:  This table will use the ReplicatedMergeTree table engine.  If you don’t know about table engines, don’t worry about that for now.  See the&lt;a href=&#34;https://clickhouse.tech/docs/en/engines/table-engines/&#34;&gt;ClickHouse Engines page&lt;/a&gt; for complete information.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;events&lt;/strong&gt;: This table will be distributed on your cluster with the Distributed table engine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In our examples, we’ll be using macro variables - these are placed between curly brackets and let us use the same SQL commands on different clusters and environments without having to fill in every detail.  Any time you see an entry like &lt;code&gt;{cluster}&lt;/code&gt; or &lt;code&gt;{shard}&lt;/code&gt; you should recognize those as a macro variable.&lt;/p&gt;
+&lt;p&gt;The commands below will create these tables into the &lt;strong&gt;default&lt;/strong&gt; database on your cluster.&lt;/p&gt;
+&lt;h3 id=&#34;create-tables&#34;&gt;Create Tables&lt;/h3&gt;
+&lt;p&gt;To create your first tables:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;From the &lt;strong&gt;Altinity Cloud Manager&lt;/strong&gt; select &lt;strong&gt;Explore&lt;/strong&gt; for the cluster to manage.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Select &lt;strong&gt;Query&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For our first table, copy and paste the following into the &lt;strong&gt;Query&lt;/strong&gt; window, then select &lt;strong&gt;Execute&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;TABLE&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;IF&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;NOT&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;EXISTS&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;events_local&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;ON&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;CLUSTER&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;{cluster}&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;event_date&lt;/span&gt;  &lt;span style=&#34;color:#204a87&#34;&gt;Date&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;event_type&lt;/span&gt;  &lt;span style=&#34;color:#000&#34;&gt;Int32&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;article_id&lt;/span&gt;  &lt;span style=&#34;color:#000&#34;&gt;Int32&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;title&lt;/span&gt;       &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ENGINE&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ReplicatedMergeTree&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;/clickhouse/{cluster}/tables/{shard}/{database}/{table}&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;{replica}&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;PARTITION&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;BY&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;toYYYYMM&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;event_date&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;ORDER&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;BY&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;event_type&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;article_id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You should see the following under &lt;strong&gt;Execute&lt;/strong&gt; confirming the commands ran, just replacing &lt;strong&gt;docdemo&lt;/strong&gt; with your cluster:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docdemo.demo.beta.altinity.cloud:8443 &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;query time: 0.342s&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+chi-docdemo-docdemo-0-0	&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;9000&lt;/span&gt; 0	 	1	&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;
+chi-docdemo-docdemo-0-1	&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;9000&lt;/span&gt; 0	 	0	&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now let’s create our second table.  Back in the &lt;strong&gt;Query&lt;/strong&gt; window, enter the following and select &lt;strong&gt;Execute&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;CREATE&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;TABLE&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;events&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;ON&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;CLUSTER&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;{cluster}&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;AS&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;events_local&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;ENGINE&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Distributed&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;{cluster}&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;default&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;events_local&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;rand&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once again, you should see confirmation under &lt;strong&gt;Execute&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docdemo.demo.beta.altinity.cloud:8443 &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;query time: 0.162s&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+chi-docdemo-docdemo-0-0	&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;9000&lt;/span&gt; 0	 	1	&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;
+chi-docdemo-docdemo-0-1	&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;9000&lt;/span&gt; 0	 	0	&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now that we have some tables, let’s not leave them empty.  Inserting data into a ClickHouse table is very similar to most SQL systems.  Let’s Insert our data, then do a quick Select on it.  Enter the following Insert command into &lt;strong&gt;Query&lt;/strong&gt;, then select &lt;strong&gt;Execute&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;INSERT&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;INTO&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;events&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;VALUES&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;today&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(),&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;13&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Example&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You’ll see the results confirmed under &lt;strong&gt;Execute&lt;/strong&gt;, just like before.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;OK.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then enter the following &lt;strong&gt;Select&lt;/strong&gt; command and select &lt;strong&gt;Execute&lt;/strong&gt; again: \&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;FROM&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;events&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The results will look like the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;docdemo.demo.beta.altinity.cloud:8443 &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;query time: 0.018s&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+┌─event_date─┬─event_type─┬─article_id─┬─title───┐
+│ 2020-11-19 │          &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; │         &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;13&lt;/span&gt; │ Example │
+└────────────┴────────────┴────────────┴─────────┘
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;view-schema&#34;&gt;View Schema&lt;/h3&gt;
+&lt;p&gt;The Database Schema shows a graphical view of your cluster’s database, the tables in it, and their structure.&lt;/p&gt;
+&lt;p&gt;To view your Schema:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;From the &lt;strong&gt;Altinity Cloud Manager&lt;/strong&gt; select &lt;strong&gt;Explore&lt;/strong&gt; for the cluster to manage.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Schema&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can expand the databases to display the tables in each database, or select the table to view its details, schema, and some sample rows.&lt;/p&gt;
+&lt;h3 id=&#34;view-processes&#34;&gt;View Processes&lt;/h3&gt;
+&lt;p&gt;To view current actions running on your cluster select &lt;strong&gt;Processes&lt;/strong&gt;.  This displays what processes are currently running, what user account they are running under, and allows you to view more details regarding the process.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>AltinityCloud: Connect Remote Clients</title>
+      <link>/altinitycloud/quickstartguide/connectclient/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/altinitycloud/quickstartguide/connectclient/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Now that we’ve shown how to create a cluster and use ClickHouse SQL queries into your new cluster, let’s connect to it remotely.&lt;/p&gt;
+&lt;p&gt;For the following, we’re going to be using the clickhouse-client program, but the same process will help you gain access from your favorite client.&lt;/p&gt;
+&lt;p&gt;Full instructions for installing ClickHouse can be found on the&lt;a href=&#34;https://clickhouse.tech/docs/en/getting-started/install/&#34;&gt; ClickHouse Installation page&lt;/a&gt;.  We’ll keep this simple and assume you’re using a Linux environment like Ubuntu.  For this example, we set up a virtual machine running Ubuntu 20.04.&lt;/p&gt;
+&lt;p&gt;First, we need to know our connection details for our Altinity.Cloud ClickHouse cluster.  To view your connection details:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;From the Altinity Cloud Manager, select &lt;strong&gt;Access Point&lt;/strong&gt; for the cluster to manage.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;From here, you can copy and paste the settings for the ClickHouse client.  For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;clickhouse-client -h yourdataset.yourcluster.altinity.cloud --port &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;9440&lt;/span&gt; -s --user&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;admin --password
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;clickhouse-client&#34;&gt;ClickHouse Client&lt;/h2&gt;
+&lt;p&gt;The ClickHouse Client is a command line based program that will be familiar to SQL based users.&lt;/p&gt;
+&lt;h3 id=&#34;setting-up-clickhouse-client-in-linux&#34;&gt;Setting Up ClickHouse Client in Linux&lt;/h3&gt;
+&lt;p&gt;If you’ve already set up ClickHouse client, then you can skip this step.&lt;/p&gt;
+&lt;p&gt;For those who need quick instructions on how to install ClickHouse client in their deb based Linux environment (like Ubuntu), use the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;IMPORTANT NOTE&lt;/strong&gt;: As of this document’s publication, version 20.13 and above of the ClickHouse client is required to connect with the SNI enabled clusters.  These instructions use the testing version of that client.  An updated official stable build is expected to be released soon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo apt-get install apt-transport-https ca-certificates dirmngr
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv E0C56BD4
+
+&lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;deb https://repo.clickhouse.tech/deb/testing/ main/&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sudo tee &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;    /etc/apt/sources.list.d/clickhouse.list
+sudo apt-get update
+
+sudo apt-get install -y clickhouse-client
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;connect-with-clickhouse-client&#34;&gt;Connect With ClickHouse Client&lt;/h3&gt;
+&lt;p&gt;If your ClickHouse client is ready, then you can copy and paste your connection settings into your favorite terminal program, and you’ll be connected.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/altinitycloud/AltinityCloud_connect_clickhouse_clientdemo.png&#34; alt=&#34;clickhouse-client to Altinity.Cloud demo&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;clickhouse-python-driver&#34;&gt;ClickHouse Python Driver&lt;/h2&gt;
+&lt;p&gt;For users who prefer Python, they can use the **clickhouse-driver **to connect through Python.  These instructions are very minimal, and are intended just to get you working in Python with your new Altinity.Cloud cluster.&lt;/p&gt;
+&lt;p&gt;These instructions are in the &lt;code&gt;bash&lt;/code&gt; shell and require the following be installed in your environment:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Python 3.7&lt;/code&gt; and above&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Python module venv&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;git&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT NOTE&lt;/strong&gt;: We will be using clickhouse-driver v0.1.6 development build, which has support for Server Name Indication (SNI) when using TLS communications.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To connect with the Python clickhouse-driver:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;(Optional)&lt;/strong&gt; Setup your local environment.  For example: \&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;python3 -m venv &lt;span style=&#34;color:#204a87&#34;&gt;test&lt;/span&gt; 
+. test/bin/activate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install the driver with pip3: \&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;pip3 install git+https://github.com/mymarilyn/clickhouse-driver@master#egg&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;clickhouse-driver
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Start Python.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add the client and connection details.  Cluster Explore provides the necessary information to link directly to your cluster.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/images/altinitycloud/AltinityCloud_connectiondetails.png&#34; alt=&#34;AltinityCloud Cluster Connection Details&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Import the clickhouse_driver client and enter the connection settings:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;clickhouse_driver&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Client&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;client&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Client&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;&amp;lt;HOSTNAME&amp;gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;admin&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;password&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PASSWORD&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;port&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;9440&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;secure&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;y&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;verify&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#3465a4&#34;&gt;False&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Run client.execute and submit your query.  Let’s just look at the tables from within Python:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;client&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;execute&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;SHOW TABLES in default&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;events&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,),&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;events_local&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,)]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can perform selects and inserts as you need.  For example, continuing from our &lt;a href=&#34;/altinitycloud/quickstartguide/yourfirstqueries/&#34;&gt;Your First Queries&lt;/a&gt; using &lt;strong&gt;Cluster Explore&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;result&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;client&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;execute&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;SELECT * FROM default.events&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;print&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;result&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;datetime&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;date&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2020&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;11&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;23&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;13&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Example&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For more information see the article &lt;a href=&#34;https://altinity.com/blog/clickhouse-and-python-getting-to-know-the-clickhouse-driver-client&#34;&gt;ClickHouse And Python: Getting To Know The ClickHouse-driver Client&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>AltinityCloud: Conclusion</title>
+      <link>/altinitycloud/quickstartguide/conclusion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/altinitycloud/quickstartguide/conclusion/</guid>
+      <description>
+        
+        
+        &lt;p&gt;There are several ways of running ClickHouse to take advantage of the robust features and speed in your big data applications.  Altinity.Cloud makes it easy to start up a cluster the way you need, manage it, and connect to it so you can go from concept to execution in the fastest way possible.&lt;/p&gt;
+&lt;p&gt;If you have any questions, please feel free &lt;a href=&#34;https://altinity.com/contact/&#34;&gt;to Contact Us&lt;/a&gt; at any time.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>AltinityCloud: FAQ</title>
+      <link>/altinitycloud/quickstartguide/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/altinitycloud/quickstartguide/faq/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;when-using-launch-cluster-i-cant-click-next-or-complete-the-process&#34;&gt;When using Launch Cluster, I can’t Click Next or complete the process&lt;/h2&gt;
+&lt;p&gt;Make sure that all of your settings are filled in.  Some common gotchas are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure that the ClickHouse User Password field has been entered and confirmed.&lt;/li&gt;
+&lt;li&gt;The cluster name should be in lower case.  Cluster names must be compliant with DNS naming standards.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

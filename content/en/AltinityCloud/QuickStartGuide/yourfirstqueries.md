@@ -102,7 +102,7 @@ To view your Schema:
 1. From the **Altinity Cloud Manager** select **Explore** for the cluster to manage.
 2. Select **Schema**.
 
-You can expand the databases to display the tables in each database, or select the table to view its details, schema, and some sample rows. 
+You can expand the databases to display the tables in each database, or select the table to view its details, schema, and some sample rows.
 
 ### View Processes
 

@@ -1,0 +1,17 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Altinity Documentation – Altinity.Cloud</title>
+    <link>/altinitycloud/</link>
+    <description>Recent content in Altinity.Cloud on Altinity Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/altinitycloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
