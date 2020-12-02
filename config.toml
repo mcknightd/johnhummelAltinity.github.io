@@ -57,7 +57,7 @@ id = "UA-00000000-0"
 [languages]
 [languages.en]
 title = "Altinity Documentation"
-description = "A Docsy example site"
+description = "Altinity Documentation"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
